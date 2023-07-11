@@ -27,5 +27,5 @@ THEN I can save my initials and score
 
 ## Review
 
-The URL of the deployed application (https://krsilveira.github.io/Challenge-4-/)
-The URL of the GitHub repository (https://github.com/krsilveira/Challenge-4-/)
+* The URL of the deployed application (https://krsilveira.github.io/Challenge-4-/)
+* The URL of the GitHub repository (https://github.com/krsilveira/Challenge-4-/)
