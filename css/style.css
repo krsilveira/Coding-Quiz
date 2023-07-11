@@ -1,0 +1,52 @@
+html, body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', Arial, sans-serif;
+    background-image: url(/images/game-show.jpeg);
+    background-position: cover;
+  }
+  
+  h1 {
+    color:  rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  
+  h2, h5, a, span {
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  .view {
+    font-size: 22px; 
+     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  }
+
+  #score-list {
+    font-size: 21px;
+    color: rgb(255, 255, 255);   
+    }
+  
+  
+  ol {
+    list-style: none;
+    counter-reset: li;
+  }
+  
+  li {
+    counter-increment: li;
+  }
+  
+  li::before {
+    content: "." counter(li);
+    color: rgb(0, 255, 34);
+    display: inline-block;
+    width: 16px;
+    margin-left: -24px;
+    margin-right: 10px;
+    text-align: right;
+    direction: rtl;
+  }
+  
+  #scoresTitle {
+    padding-left: 200px;
+  }
