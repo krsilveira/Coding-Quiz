@@ -21,32 +21,5 @@ html, body {
      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   }
 
-  #score-list {
-    font-size: 21px;
-    color: rgb(255, 255, 255);   
-    }
   
   
-  ol {
-    list-style: none;
-    counter-reset: li;
-  }
-  
-  li {
-    counter-increment: li;
-  }
-  
-  li::before {
-    content: "." counter(li);
-    color: rgb(0, 255, 34);
-    display: inline-block;
-    width: 16px;
-    margin-left: -24px;
-    margin-right: 10px;
-    text-align: right;
-    direction: rtl;
-  }
-  
-  #scoresTitle {
-    padding-left: 200px;
-  }
