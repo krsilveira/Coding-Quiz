@@ -1,7 +1,6 @@
 html, body {
-    background-color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', Arial, sans-serif;
-    background-image: url(../images/game-show.jpeg);
+    background-image: url(../images/trophy.jpeg);
     background-position: cover;
   }
   

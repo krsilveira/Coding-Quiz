@@ -1,18 +1,20 @@
+//   SCOREBOARD/Highscore script
+
+
 var restartBtn = document.querySelector("button.restartBtn"),
 clearBtn = document.querySelector("button.clearBtn"),
 
-/* grab highScore list and turn it to an object */
 
 highScores = JSON.parse(localStorage.getItem("highScores") || "[]"),
 scoreList = document.getElementById("score-list");
 
-/*Sort hall of fame scoreboard (highScores) from high to low */
+
+/* scoreboard is sorted from highest score to the User's lowest score */
 
 highScores.sort(function (a, b) {
 return b.score - a.score
 })
 
-/* var for scoring display */
 
 for (var s = 0; s < highScores.length; s++) {
 var newLi = document.createElement("li")
@@ -21,12 +23,13 @@ scoreList.appendChild(newLi)
 }
 
 
-/* main menu/clear hall of fame */
+/* Clear highs cores*/
 
 clearBtn.addEventListener("click", function () {
 localStorage.clear();
 history.back()
 });
+
 restartBtn.addEventListener("click", function () {
 history.back();
 });
