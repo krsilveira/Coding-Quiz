@@ -25,11 +25,12 @@ scoreList.appendChild(newLi)
 
 /* Clear highs cores*/
 
+// clearBtn will delete all saved/previous recorded high scorea on lists 
 clearBtn.addEventListener("click", function () {
 localStorage.clear();
 history.back()
 });
-
+//restartBtn will send the User back to main menu once button is clicked
 restartBtn.addEventListener("click", function () {
 history.back();
 });
