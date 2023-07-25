@@ -1,7 +1,6 @@
 
 /* questions created for given User */
 
-
 const questions = [
     {
       title: 'The condition in an if / else statement is enclosed with',
@@ -164,15 +163,11 @@ function startTimer() {
 
 function setTimer() {
 
-    var countdown = setInterval(function () {
-        secondsLeft--;
+    var countdown = setInterval(function () { secondsLeft--;
         timerElement.textContent = "Time: " + secondsLeft;
 
-        if (secondsLeft === 0 || questionNumber === questions.length) {
-            clearInterval(countdown);
-            setTimeout(displayScore, 500);
-        }
-    }, 1000);
+        if (secondsLeft === 0 || questionNumber === questions.length) { clearInterval(countdown); setTimeout(displayScore, 500);
+        } }, 1000);
 }
 
 /* reveal each question one at a time from the questions array in questions.js file. Then, grab the answer choice selected by user to reveal next question */
@@ -181,15 +176,12 @@ function makeQuestions() {
     questionNumber++;
     answer = questions[questionNumber].answer
 
-    questionHead.textContent = questions[questionNumber].title;
-    answerChoices.innerHTML = "";
+    questionHead.textContent = questions[questionNumber].title; answerChoices.innerHTML = "";
 
     var choices = questions[questionNumber].choices;
 
-    for (var q = 0; q < choices.length; q++) {
-        var nextChoice = document.createElement("button");
-
-        nextChoice.textContent = choices[q]
+    for (var q = 0; q < choices.length; q++) { var nextChoice = document.createElement("button");
+        nextChoice.textContent = choices[q] //after the User selects an answer, the next question will PPEARUser will click 
         answerBtn = answerChoices.appendChild(nextChoice).setAttribute("class", "p-3 m-1 btn btn-light btn-block");
     }
 }
@@ -205,10 +197,8 @@ function displayScore() {
 }
 
 startBtn.addEventListener("click", startTimer);
-submitBtn.addEventListener("click", function (event) {
-    event.stopPropagation();
+submitBtn.addEventListener("click", function (event) { event.stopPropagation();
     addScore();
-    
     window.location.href = './highscores.html'
 });
 
@@ -219,9 +209,7 @@ submitBtn.addEventListener("click", function (event) {
 function addScore () {
     userNameInput = document.getElementById("userName").value
     
-var newScore = {
-        name: userNameInput,
-        score: secondsLeft
+var newScore = { name: userNameInput, score: secondsLeft
     };
 
 
@@ -252,13 +240,8 @@ answerChoices.addEventListener("click", function (event) {
         showFeedback();   
         
     } else {
-        pElement.innerHTML = "WRONG.";
-        setTimeout(hideFeedback,1225);
-        secondsLeft = secondsLeft - 20;
-        showFeedback();
+        pElement.innerHTML = "WRONG."; setTimeout(hideFeedback,1225); secondsLeft = secondsLeft - 20; showFeedback();
     }    
     makeQuestions();
-
 });
-
 
