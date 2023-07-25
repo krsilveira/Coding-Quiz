@@ -1,7 +1,7 @@
 # Coding Quiz 
 
 ## Description
-This website is a simple ten-question test of a User's javascript programming knowledge. The development process of the application showcases my ability to use HTML, CSS, Javascript and WebAPI to generate a timed-quiz videogame that engages the Users to test their knowledge, score points and save their highscores. Highlighted proficiencies during development:
+This website is a simple ten-question test of a User's javascript programming knowledge. The development process of the application showcases my ability to use HTML, CSS, Javascript and WebAPI to generate a timed-quiz videogame that engages the User to test their knowledge, score points and save their highscores. Highlighted proficiencies during development:
 * web APIs
 * local storage
 * event listeners
